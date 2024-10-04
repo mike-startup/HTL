@@ -74,6 +74,9 @@
     color: white;
     text-decoration: none;
   }
+  nav ul li a.active {
+    color: #ffffff99; /* Highlight color (gold in this case) */
+}
   
   .menu-toggle {
     display: none;
@@ -515,6 +518,10 @@ footer .top-section > *{
 footer .top-section > :last-child{
   border: none;
 }
+
+footer .top-section .logo{
+  flex: 1;
+}
 footer .top-section img{
   width: 10rem;
   height: fit-content;
@@ -562,4 +569,10 @@ footer .bottom-section{
   font-size: 1rem;
   color: gainsboro;
   text-align: center;
+}
+@media (max-width: 1366px) {
+  footer{
+    padding: 0 4rem; 
+
+  }
 }
