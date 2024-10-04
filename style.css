@@ -35,6 +35,10 @@
     width: fit-content;
     text-shadow: #333 1px 1px 1px;
     box-shadow: #333 1px 1px 5px;
+    transition: .5s ease;
+  }
+  .button:hover{
+    background-color: #00924599;
   }
   
   /*            header code             */          

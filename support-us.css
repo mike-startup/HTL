@@ -35,6 +35,9 @@
     text-shadow: #333 1px 1px 1px;
     box-shadow: #333 1px 1px 5px;
   }
+  .button:hover{
+    background-color: #00924599;
+  }
 
   .container{
     width: 100%;
