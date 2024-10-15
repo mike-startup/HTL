@@ -162,7 +162,7 @@
     height: 90vh;
     background-image: url(resources/hero-background.jpg);
     background-position: left;
-    background-size: cover;
+    background-size: 1566px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -202,6 +202,7 @@
     }
   }
   .founders-section{
+    position: relative;
     width: 100%;
     height: fit;
     display: flex;
@@ -209,7 +210,14 @@
     gap: 2rem;
     justify-content: flex-start;
   }
-  
+  .founders-section .bird-background{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    opacity: 50%;
+    transform: translateY(40%);
+  }
   .founders-section .content{
     display: flex;
     gap: 2rem;
@@ -551,6 +559,9 @@ footer{
   padding: 0rem 8rem;
   background-color: #333;
 }
+footer *{
+  color: gainsboro;
+}
 footer .top-section{
   width: 100%;
   display: flex;
@@ -559,40 +570,37 @@ footer .top-section{
 }
 footer .top-section > *{
   flex: 1;
-  padding: 0rem 2rem;
-  border-right: 1.5px solid gainsboro;
-  max-width: 20rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-right: 1px white solid;
 }
 footer .top-section > :last-child{
   border: none;
 }
 
-footer .top-section .logo{
-  flex: 1;
-}
-footer .top-section img{
+
+
+footer .top-section .logo img{
   width: 10rem;
   height: fit-content;
 }
-.top-section .site-map{
+.top-section .site-map .links{
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
 }
-.top-section .site-map a{
-  color: gainsboro;
-}
-.top-section .contact-points{
-  color: white;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
+.top-section .site-map .links > *{
+  width: 100%;
+  font-size: 12px;
 }
 .top-section .contact-points .phone i, .top-section .contact-points .email i{
   margin-right: 1rem;
-  font-size: 1.5rem; 
+  font-size: 1.2rem; 
 }
 .top-section .contact-points .phone, .top-section .contact-points .email{
   font-size: .9rem;
