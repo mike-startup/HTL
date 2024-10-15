@@ -13,7 +13,6 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  mousewheel: true,  // Enable scrolling with the mousewheel
   simulateTouch: true,  // Enable dragging with the mouse
   grabCursor: true,  // Show a hand cursor when dragging
   keyboard: {
