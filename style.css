@@ -526,17 +526,21 @@
 .library{
   width: 100%;
   height: fit-content;
-  padding: 0 8rem 4rem 8rem;
+  padding: 0 8rem 6rem 8rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center ;
 }
 .library h1{
   font-size: 3rem;
+  margin: 0 !important;
+  color: #333;
+  text-shadow: #333 1px 1px 1px;
 }
 .library h1 span{
   color: #009245;
+  
 }
 .book-container{
   display: flex !important;
