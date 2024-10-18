@@ -20,7 +20,13 @@
             immediately contribute. By keeping our community informed and actively engaging 
             them through these updates, we can encourage greater participation in HTL’s mission.
         </p>
-        <a href="index.html" class="button">Back to Homepage</a>
+        <a id="backBtn" class="button">Go back to Homepage</a>
+        <script>
+            // JavaScript to navigate back to the previous page when the button is clicked
+            document.getElementById("backBtn").addEventListener("click", function() {
+                history.back();
+            });
+        </script>
     </div>
 </body>
 </html>

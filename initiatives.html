@@ -22,7 +22,13 @@
             the 'Initiatives' page will serve as a pathway to the support page, helping us drive more 
             donations and engagement.
         </p>
-        <a href="index.html" class="button">Back to Homepage</a>
+        <a id="backBtn" class="button">Go back to Homepage</a>
+        <script>
+            // JavaScript to navigate back to the previous page when the button is clicked
+            document.getElementById("backBtn").addEventListener("click", function() {
+                history.back();
+            });
+        </script>
     </div>
 </body>
 </html>

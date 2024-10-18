@@ -22,7 +22,14 @@
             helping visitors understand the deeper meaning behind our ministry and why their 
             support is vital.
         </p>
-        <a href="index.html" class="button">Back to Homepage</a>
+        <a id="backBtn" class="button">Go back to Homepage</a>
+        
     </div>
+    <script>
+        // JavaScript to navigate back to the previous page when the button is clicked
+        document.getElementById("backBtn").addEventListener("click", function() {
+            history.back();
+        });
+    </script>
 </body>
 </html>

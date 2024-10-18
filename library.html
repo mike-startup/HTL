@@ -13,6 +13,12 @@
         Primarily dedicated to the late founder, this page will highlight books that reflect the values and vision they instilled in HTL. Each book will be thoughtfully selected to inspire and equip individuals on their spiritual journey, continuing the founder’s legacy of faith and transformation.
         
         Through this Library, we aim to offer our community trusted spiritual resources while honoring the founder’s lasting impact on the ministry.</p>
-    <a href="index.html" class="button">Go back to Homepage</a>
+    <a id="backBtn" class="button">Go back to Homepage</a>
+    <script>
+        // JavaScript to navigate back to the previous page when the button is clicked
+        document.getElementById("backBtn").addEventListener("click", function() {
+            history.back();
+        });
+    </script>
 </body>
 </html>

@@ -17,7 +17,13 @@
             creating a seamless donation experience, the support page will serve 
             as the heart of our fundraising efforts, ensuring that visitors are inspired 
             to support HTL’s mission.</p>
-        <a href="index.html" class="button">Back to Homepage</a>
+            <a id="backBtn" class="button">Go back to Homepage</a>
+            <script>
+                // JavaScript to navigate back to the previous page when the button is clicked
+                document.getElementById("backBtn").addEventListener("click", function() {
+                    history.back();
+                });
+            </script>
     </div>
 </body>
 </html>
